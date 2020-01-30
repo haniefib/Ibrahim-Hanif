@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		alert('Hello World')
+		document.write("<h2>Hello World</h2>")
+		var x = 10
+		var katakata = "X = "+x
+		if(x < 7){
+			document.write("<h2>X kurang dari 7</h2>")
+		}
+		document.write("<h2> X = "+x+"</h2>")
+		
+		var getTanggalHariIni = () => {
+			document.write('<h1>'+Date()+'</h1>')
+		}
+
+		var onClick = () => {
+			var input2 = parseInt(document.getElementById('input1').value)
+			var input3 = parseInt(document.getElementById('input2').value)
+			alert('baris1 + baris2 = '+(input2 + input3))
+			alert('')
+		}
+	</script>
+</head>
+<body>
+	<input id="input1" type="text" />
+	<br>
+	<input id="input2" type="text">
+	<button onclick="onClick()">tambah</button>
+	<br>
+	<button onclick="onClick()">Click Me</button>
+	<button getTanggalHariIni="getTanggalHariIni">Get date</button>
+</body>
+</html>
